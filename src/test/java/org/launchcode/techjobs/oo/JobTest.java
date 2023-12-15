@@ -1,5 +1,37 @@
 package org.launchcode.techjobs.oo;
 
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
 public class JobTest {
     //TODO: Create your unit tests here
+    @Test
+    public void testSettingJobId() {
+        Job job1 = new Job();
+        Job job2 = new Job();
+        assertNotEquals(job1, job2);
+    }
+
+    @Test
+    public void testJobConstructorSetsAllFields() {
+        Job productTester = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        assertTrue(productTester.getEmployer() instanceof Employer);
+        assertEquals("ACME", productTester.getEmployer().toString());
+        assertTrue(productTester.getLocation() instanceof Location);
+        assertEquals("Desert", productTester.getLocation().toString());
+        assertTrue(productTester.getPositionType() instanceof PositionType);
+        assertEquals("Quality control", productTester.getPositionType().toString());
+        assertTrue(productTester.getCoreCompetency() instanceof CoreCompetency);
+        assertEquals("Persistence", productTester.getCoreCompetency().toString());
+        assertTrue(productTester instanceof Job);
+        assertEquals("Product tester", productTester.getName());
+    }
+
+    @Test
+    public void testJobsForEquality() {
+        Job job3 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        Job job4 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        assertFalse(job3.equals(job4));
+    }
 }
