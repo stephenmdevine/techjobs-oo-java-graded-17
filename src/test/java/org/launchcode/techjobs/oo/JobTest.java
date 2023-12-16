@@ -44,13 +44,15 @@ public class JobTest {
 
     @Test
     public void testToStringStartsAndEndsWithNewLine() {
-        Job emptyJob = new Job();
-        String firstChar = String.valueOf(emptyJob.toString().charAt(0));
-        String lastChar = String.valueOf(emptyJob.toString().charAt(emptyJob.toString().length()-1));
+        Job acmeProductTester = new Job("Product tester", new Employer(""),
+                new Location("Desert"), new PositionType(""),
+                new CoreCompetency(""));
+//        String firstChar = String.valueOf(acmeProductTester.toString().charAt(0));
+//        String lastChar = String.valueOf(acmeProductTester.toString().charAt(acmeProductTester.toString().length()-1));
 //        assertEquals(firstChar, lineSeparator());
-        assertTrue(emptyJob.toString().startsWith(System.lineSeparator()));
+        assertTrue(acmeProductTester.toString().startsWith(System.lineSeparator()));
 //        assertEquals(lastChar, lineSeparator());
-        assertTrue(emptyJob.toString().endsWith(System.lineSeparator()));
+        assertTrue(acmeProductTester.toString().endsWith(System.lineSeparator()));
     }
 
     @Test

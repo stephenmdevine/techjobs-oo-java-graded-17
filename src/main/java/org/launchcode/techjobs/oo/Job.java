@@ -37,7 +37,7 @@ public class Job {
     public String toString() {
         String s = System.lineSeparator();
         return s + "ID: " + this.getId() + s +
-                "Name: " + (this.getName().isEmpty() ? "Data not available" : this.getName()) + s +
+                "Name: " + (this.getName().equals("") ? "Data not available" : this.getName()) + s +
                 "Employer: " + (this.getEmployer().toString().equals("") ? "Data not available" : this.getEmployer()) + s +
                 "Location: " + (this.getLocation().toString().equals("") ? "Data not available" : this.getLocation()) + s +
                 "Position Type: " + (this.getPositionType().toString().equals("") ? "Data not available" : this.getPositionType()) + s +
