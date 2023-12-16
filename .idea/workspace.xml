@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Hardcoded job data in Main prints as expected.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="JobTest file behaving more appropriately now" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -278,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702762225999</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="JobTest file behaving more appropriately now">
+      <option name="closed" value="true" />
+      <created>1702765584427</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702765584427</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -288,6 +292,7 @@
     <MESSAGE value="Thru Task 5 complete, aside from unresolved lineSeparator errors (in the tests)" />
     <MESSAGE value="Thru Task 6 complete, aside from unresolved lineSeparator errors (in the tests) associated with task 5." />
     <MESSAGE value="Hardcoded job data in Main prints as expected." />
-    <option name="LAST_COMMIT_MESSAGE" value="Hardcoded job data in Main prints as expected." />
+    <MESSAGE value="JobTest file behaving more appropriately now" />
+    <option name="LAST_COMMIT_MESSAGE" value="JobTest file behaving more appropriately now" />
   </component>
 </project>

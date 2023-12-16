@@ -57,7 +57,7 @@ public class JobTest {
 
     @Test
     public void testToStringContainsCorrectLabelsAndData() {
-        String expectedString = lineSeparator() + "ID: 1" + lineSeparator() +
+        String expectedString = lineSeparator() + "ID: 4" + lineSeparator() +
                 "Name: Product tester" + lineSeparator() + "Employer: ACME" + lineSeparator() +
                 "Location: Desert" + lineSeparator() + "Position Type: Quality control" +
                 lineSeparator() + "Core Competency: Persistence" + lineSeparator();
@@ -69,7 +69,7 @@ public class JobTest {
 
     @Test
     public void testToStringHandlesEmptyField() {
-        String expectedString = lineSeparator() + "ID: 1" + lineSeparator() +
+        String expectedString = lineSeparator() + "ID: 3" + lineSeparator() +
                 "Name: Product tester" + lineSeparator() + "Employer: Data not available" + lineSeparator() +
                 "Location: Desert" + lineSeparator() + "Position Type: Data not available" +
                 lineSeparator() + "Core Competency: Data not available" + lineSeparator();
