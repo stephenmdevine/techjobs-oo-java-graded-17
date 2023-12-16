@@ -1,5 +1,4 @@
 package org.launchcode.techjobs.oo;
-
 import java.util.Objects;
 
 public class Job {
@@ -32,6 +31,24 @@ public class Job {
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
+
+
+    @Override
+    public String toString() {
+        String s = System.lineSeparator();
+        return s + "ID: " + this.getId() + s +
+                "Name: " + (this.getName().isEmpty() ? "Data not available" : this.getName()) + s +
+                "Employer: " + (this.getEmployer().toString().equals("") ? "Data not available" : this.getEmployer()) + s +
+                "Location: " + (this.getLocation().toString().equals("") ? "Data not available" : this.getLocation()) + s +
+                "Position Type: " + (this.getPositionType().toString().equals("") ? "Data not available" : this.getPositionType()) + s +
+                "Core Competency: " + (this.getCoreCompetency().toString().equals("") ? "Data not available" : this.getCoreCompetency()) + s
+                ;
+//                "Name: " + (!Objects.equals(this.getName(), "") ? this.getName() : "Data not available") + s +
+//                "Employer: " + (!Objects.equals(this.getEmployer(), "") ? this.getEmployer() : "Data not available") + s +
+//                "Location: " + (!Objects.equals(this.getLocation(), "") ? this.getLocation() : "Data not available") + s +
+//                "Position Type: " + (!Objects.equals(this.getPositionType(), "") ? this.getPositionType() : "Data not available") + s +
+//                "Core Competency: " + (!Objects.equals(this.getCoreCompetency(), "") ? this.getCoreCompetency() : "Data not available") + s;
+    }
 
     @Override
     public boolean equals(Object o) {
